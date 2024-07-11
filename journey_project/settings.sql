@@ -1,0 +1,3 @@
+CREATE DATABASE journey;
+CREATE USER journeyuser WITH PASSWORD 'journey';
+GRANT ALL PRIVILEGES ON DATABASE journey TO journeyUser;
