@@ -3,6 +3,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
 def validate_max(value):
+        '''Determines if value is entered is between 0 and 10'''
         if value < 0 or value > 10:
             raise ValidationError(
                 _("%(value)s needs to be a value between 0 and 10, including 0 and 10, yada yada yada"),
